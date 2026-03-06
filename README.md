@@ -28,7 +28,7 @@ The website includes:
 ## Form and Payment Flow (GBP 25)
 
 Current flow:
-1. User lands on `Start Your Enquiry`
+1. User lands on `Check Your Eligibility`
 2. User completes embedded Tally application form.
 3. User pays a **GBP 25 priority review fee** in the same form journey (configured in Tally).
 4. Team reviews paid submissions and follows up
@@ -126,7 +126,7 @@ Post-deploy checklist:
 - Confirm GBP 25 fee is required before successful submission
 
 Compliance/trust checklist before traffic:
-- Replace placeholder footer legal links with real Privacy Policy and Terms pages
+- Confirm Privacy Policy and Terms of Service pages open and match current policy
 - Ensure all legal wording is approved by the business before paid traffic
 
 ## Ownership Checklist

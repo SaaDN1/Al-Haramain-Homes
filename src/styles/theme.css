@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap');
+
 /* Premium Corporate Theme - IIG Style */
 :root {
   --primary-navy: #1a3a52;
@@ -8,6 +10,7 @@
   --white: #ffffff;
   --border-color: #e5e5e5;
   --top-nav-height: 95px;
+  --title-font: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
 
 .iig-link {
@@ -114,7 +117,7 @@ html {
 }
 
 .hero-content h1 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: var(--title-font);
   font-size: 4.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -170,6 +173,7 @@ html {
 }
 
 .section h2 {
+  font-family: var(--title-font);
   font-size: 3rem;
   color: var(--primary-navy);
   text-align: center;
@@ -249,6 +253,12 @@ html {
   color: #f4eee2;
 }
 
+.point-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
 .point-copy h3 {
   margin: 0 0 5px;
   color: var(--primary-navy);
@@ -304,9 +314,34 @@ html {
 .audience-card h3 {
   font-size: 1.25rem;
   color: var(--primary-navy);
-  margin-bottom: 0.8rem;
+  margin: 0;
   font-weight: 700;
   letter-spacing: -0.3px;
+}
+
+.audience-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.audience-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: linear-gradient(160deg, #1a3a52 0%, #294e6c 100%);
+  color: #f4eee2;
+}
+
+.audience-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .audience-card p {
@@ -359,11 +394,16 @@ html {
 }
 
 .step h3 {
-  font-size: 1.2rem;
-  margin: 1.5rem 0 1rem;
+  display: block;
+  width: 100%;
+  font-size: 1.1rem;
+  margin: 1.5rem auto 1rem;
   font-weight: 700;
   color: var(--primary-navy);
-  letter-spacing: -0.3px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.3;
+  white-space: nowrap;
 }
 
 .step p {
@@ -416,9 +456,7 @@ html {
 
 /* Enquiry */
 .enquiry .section-intro {
-  max-width: none;
-  white-space: nowrap;
-  text-wrap: unset;
+  max-width: 820px;
 }
 
 .tally-embed-wrapper {
@@ -506,10 +544,6 @@ html {
   .process-steps,
   .faq-grid {
     gap: 20px;
-  }
-
-  .enquiry .section-intro {
-    white-space: normal;
   }
 
   .tally-embed {
